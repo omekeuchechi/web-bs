@@ -1,0 +1,48 @@
+* {  
+    margin: 0;  
+    padding: 0;  
+    box-sizing: border-box;  
+}  
+
+body, html {  
+    height: 100%;  
+    overflow: hidden;  
+}  
+
+.slider {  
+    position: relative;  
+    height: 100%;  
+    width: 100%;  
+}  
+
+.slides {  
+    display: flex;  
+    transition: transform 0.5s ease-in-out;  
+    height: 100%;  
+}  
+
+.slide {  
+    height: 100%;  
+    width: 100%;  
+    object-fit: cover; /* This ensures the images cover the whole area */  
+}  
+
+button {  
+    position: absolute;  
+    top: 50%;  
+    transform: translateY(-50%);  
+    background-color: rgba(0, 0, 0, 0.5);  
+    color: white;  
+    border: none;  
+    cursor: pointer;  
+    padding: 10px;  
+    z-index: 10;  
+}  
+
+.prev {  
+    left: 10px;  
+}  
+
+.next {  
+    right: 10px;  
+}
